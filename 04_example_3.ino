@@ -7,14 +7,13 @@ void setup() {
   while (!Serial) {
     ; // wait for serial port to connect.
   }
-  Serial.println("Hello World!");
-  count=toggle=0;
+  count = toggle = 0;
   digitalWrite(PIN_LED, toggle);
 }
 
 void loop() {
-  Serial.println(++count);
-  toggle=toggle_state(toggle);
+  Serial.println("Hello World!");
+  toggle = toggle_state(toggle);
   digitalWrite(PIN_LED, toggle);
   delay(1000);
 }
@@ -22,3 +21,4 @@ void loop() {
 int toggle_state(int toggle) {
   return !toggle;
 }
+
