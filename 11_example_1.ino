@@ -20,8 +20,9 @@
                           // Setting EMA to 1 effectively disables EMA filter.
 
 // Target Distance
-#define _TARGET_LOW  90.0
-#define _TARGET_HIGH 180.0
+#define _TARGET_LOW  180.0
+#define _TARGET_HIGH 360.0
+//In Youtube video, _TARGET_LOW and _TARGET_HIGH was set to 90 and 180 because the breadboard was in framework.
 
 // duty duration for myservo.writeMicroseconds()
 // NEEDS TUNING (servo by servo)
